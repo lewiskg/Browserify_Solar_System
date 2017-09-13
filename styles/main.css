@@ -1,0 +1,11 @@
+body {
+	background: azure;
+}
+
+.output-container {
+	display: flex;
+	flex-wrap: wrap;
+}
+.planet {
+	border: solid 2px black;
+}
