@@ -2,22 +2,22 @@
 
 const Mercury = { 
 	"Name": "Mercury", 
-	"Year":  0,
-	"Mass": "5.972 × 10^24 kg", 
-	"Size": "6371.39 km",
-	"Distance": "149.6 x 10^6 km",
-	"Atmosphere": "78% N, 21% O, 0.9 Ar",
-	"Satellites": "Moon",
-	"Spacecrafts": "too many"
+	"Year":  "265 B.C.",
+	"Mass": "0.33 × 10^24 kg", 
+	"Size": "4878 km",
+	"Distance": "69.8 x 10^6 km",
+	"Atmosphere": "none",
+	"Satellites": 0,
+	"Spacecrafts": "Mariner 10, Messenger"
 };
 
 function outputTo(domElement) {
-	domElement.innerHTML += '<div id="Mercury" class="planet">';
+	let temp = '<div id="Mercury" class="planet">';
 	for (let key in Mercury) {
-		domElement.innerHTML += `<p>${key} &nbsp ${Mercury[key]}</p>`;
+		temp  += `<p>${key} &nbsp:&nbsp ${Mercury[key]}</p>`;
   	}
-	domElement.innerHTML += '</div>';
-
+  	temp += '</div>';
+	domElement.innerHTML += temp;
 }
 
 module.exports = outputTo;

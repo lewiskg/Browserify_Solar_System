@@ -12,11 +12,12 @@ const Earth = {
 };
 
 function outputTo(domElement) {
-	domElement.innerHTML += '<div id="Earth" class="planet">';
+	let temp = '<div id="Earth" class="planet">';
 	for (let key in Earth) {
-		domElement.innerHTML += `<p>${key} &nbsp ${Earth[key]}</p>`;
+		temp += `<p>${key} &nbsp:&nbsp ${Earth[key]}</p>`;
   	}
-	domElement.innerHTML += '</div>';
+	temp += '</div>';
+	domElement.innerHTML += temp;
 }
 
 module.exports = outputTo;

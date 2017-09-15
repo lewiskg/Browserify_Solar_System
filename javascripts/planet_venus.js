@@ -2,21 +2,22 @@
 
 const Venus = { 
 	"Name": "Venus", 
-	"Year":  0,
-	"Mass": "5.972 × 10^24 kg", 
-	"Size": "6371.39 km",
-	"Distance": "149.6 x 10^6 km",
-	"Atmosphere": "78% N, 21% O, 0.9 Ar",
-	"Satellites": "Moon",
-	"Spacecrafts": "too many"
+	"Year":  1761,
+	"Mass": "4.87 × 10^24 kg", 
+	"Size": "12104 km",
+	"Distance": "109 x 10^6 km",
+	"Atmosphere": "Almost completely carbon dioxide. Nitrogen exists in small doses, as do clouds of sulfuric acid.",
+	"Satellites": "none",
+	"Spacecrafts": "38 spacecraft have at least partially successfully completed a mission at Venus."
 };
 
 function outputTo(domElement) {
-	domElement.innerHTML += '<div id="Venus" class="planet">';
+	let temp = '<div id="Venus" class="planet">';
 	for (let key in Venus) {
-		domElement.innerHTML += `<p>${key} &nbsp ${Venus[key]}</p>`;
+		temp += `<p>${key} &nbsp:&nbsp ${Venus[key]}</p>`;
   	}
-	domElement.innerHTML += '</div>';
+  	temp += '</div>';
+	domElement.innerHTML += temp;
 
 }
 
