@@ -37,11 +37,12 @@ const Earth = {
 };
 
 function outputTo(domElement) {
-	domElement.innerHTML += '<div id="Earth" class="planet">';
+	let temp = '<div id="Earth" class="planet">';
 	for (let key in Earth) {
-		domElement.innerHTML += `<p>${key} &nbsp ${Earth[key]}</p>`;
+		temp += `<p>${key} &nbsp:&nbsp ${Earth[key]}</p>`;
   	}
-	domElement.innerHTML += '</div>';
+	temp += '</div>';
+	domElement.innerHTML += temp;
 }
 
 module.exports = outputTo;
@@ -50,21 +51,22 @@ module.exports = outputTo;
 
 const Jupiter = { 
 	"Name": "Jupiter", 
-	"Year":  0,
-	"Mass": "5.972 × 10^24 kg", 
-	"Size": "6371.39 km",
-	"Distance": "149.6 x 10^6 km",
-	"Atmosphere": "78% N, 21% O, 0.9 Ar",
-	"Satellites": "Moon",
-	"Spacecrafts": "too many"
+	"Year":  1610,
+	"Mass": "1,898 × 10^24 kg", 
+	"Size": "142,800 km",
+	"Distance": "817 x 10^6 km",
+	"Atmosphere": "90% H, ~10% He, trace amounts of ammonia, sulfur, methane, and water vapor.",
+	"Satellites": "67 known",
+	"Spacecrafts": '<a href="https://en.wikipedia.org/wiki/Exploration_of_Jupiter">List of missions to Juipter</a>'
 };
 
 function outputTo(domElement) {
-	domElement.innerHTML += '<div id="Jupiter" class="planet">';
+	let temp = '<div id="Jupiter" class="planet">';
 	for (let key in Jupiter) {
-		domElement.innerHTML += `<p>${key} &nbsp ${Jupiter[key]}</p>`;
+		temp += `<p>${key} &nbsp:&nbsp ${Jupiter[key]}</p>`;
   	}
-	domElement.innerHTML += '</div>';
+  	temp += '</div>';
+	domElement.innerHTML += temp;
 
 }
 
@@ -74,21 +76,22 @@ module.exports = outputTo;
 
 const Mars = { 
 	"Name": "Mars", 
-	"Year":  0,
-	"Mass": "5.972 × 10^24 kg", 
-	"Size": "6371.39 km",
-	"Distance": "149.6 x 10^6 km",
-	"Atmosphere": "78% N, 21% O, 0.9 Ar",
-	"Satellites": "Moon",
-	"Spacecrafts": "too many"
+	"Year":  1659,
+	"Mass": "0.64 × 10^24 kg", 
+	"Size": "6785 km",
+	"Distance": "249 x 10^6 km",
+	"Atmosphere": "95.32% CO2, N 2.7%, Ar 1.6%, 0.13% O, CO 0.08%",
+	"Satellites": "Phobos, Deimos",
+	"Spacecrafts": '<a href="https://en.wikipedia.org/wiki/List_of_missions_to_Mars">List of missions to Mars</a>'
 };
 
 function outputTo(domElement) {
-	domElement.innerHTML += '<div id="Mars" class="planet">';
+	let temp = '<div id="Mars" class="planet">';
 	for (let key in Mars) {
-		domElement.innerHTML += `<p>${key} &nbsp ${Mars[key]}</p>`;
+		temp += `<p>${key} &nbsp:&nbsp ${Mars[key]}</p>`;
   	}
-	domElement.innerHTML += '</div>';
+  	temp += '</div';
+	domElement.innerHTML += temp;
 
 }
 
@@ -98,22 +101,22 @@ module.exports = outputTo;
 
 const Mercury = { 
 	"Name": "Mercury", 
-	"Year":  0,
-	"Mass": "5.972 × 10^24 kg", 
-	"Size": "6371.39 km",
-	"Distance": "149.6 x 10^6 km",
-	"Atmosphere": "78% N, 21% O, 0.9 Ar",
-	"Satellites": "Moon",
-	"Spacecrafts": "too many"
+	"Year":  "265 B.C.",
+	"Mass": "0.33 × 10^24 kg", 
+	"Size": "4878 km",
+	"Distance": "69.8 x 10^6 km",
+	"Atmosphere": "none",
+	"Satellites": 0,
+	"Spacecrafts": "Mariner 10, Messenger"
 };
 
 function outputTo(domElement) {
-	domElement.innerHTML += '<div id="Mercury" class="planet">';
+	let temp = '<div id="Mercury" class="planet">';
 	for (let key in Mercury) {
-		domElement.innerHTML += `<p>${key} &nbsp ${Mercury[key]}</p>`;
+		temp  += `<p>${key} &nbsp:&nbsp ${Mercury[key]}</p>`;
   	}
-	domElement.innerHTML += '</div>';
-
+  	temp += '</div>';
+	domElement.innerHTML += temp;
 }
 
 module.exports = outputTo;
@@ -122,21 +125,22 @@ module.exports = outputTo;
 
 const Neptune = { 
 	"Name": "Neptune", 
-	"Year":  0,
-	"Mass": "5.972 × 10^24 kg", 
-	"Size": "6371.39 km",
-	"Distance": "149.6 x 10^6 km",
-	"Atmosphere": "78% N, 21% O, 0.9 Ar",
-	"Satellites": "Moon",
-	"Spacecrafts": "too many"
+	"Year":  1846,
+	"Mass": "1.024 × 10^24 kg", 
+	"Size": "49,493 km",
+	"Distance": "4.54 x 10^9 km",
+	"Atmosphere": "80% H, 19% He, 1.5% CH4, 192 ppm H2H, 1.5 ppm C2H6",
+	"Satellites": "14 known moons, faint rings",
+	"Spacecrafts": "Voyager 2 (flyby)"
 };
 
 function outputTo(domElement) {
-	domElement.innerHTML += '<div id="Neptune" class="planet">';
+	let temp = '<div id="Neptune" class="planet">';
 	for (let key in Neptune) {
-		domElement.innerHTML += `<p>${key} &nbsp ${Neptune[key]}</p>`;
+		temp += `<p>${key} &nbsp:&nbsp ${Neptune[key]}</p>`;
   	}
-	domElement.innerHTML += '</div>';
+  	temp += '</div>';
+	domElement.innerHTML += temp;
 
 }
 
@@ -146,21 +150,22 @@ module.exports = outputTo;
 
 const Saturn = { 
 	"Name": "Saturn", 
-	"Year":  0,
-	"Mass": "5.972 × 10^24 kg", 
-	"Size": "6371.39 km",
-	"Distance": "149.6 x 10^6 km",
-	"Atmosphere": "78% N, 21% O, 0.9 Ar",
-	"Satellites": "Moon",
-	"Spacecrafts": "too many"
+	"Year":  1610,
+	"Mass": "568.5 × 10^24 kg", 
+	"Size": "119,871 km",
+	"Distance": "888.2 x 10^6 km",
+	"Atmosphere": "96.3% H and 3.25% He",
+	"Satellites": "62 known moons and many ring",
+	"Spacecrafts": "Pioneer 11, Voyager 1, Voyager 2, and Cassini"
 };
 
 function outputTo(domElement) {
-	domElement.innerHTML += '<div id="Saturn" class="planet">';
+	let temp = '<div id="Saturn" class="planet">';
 	for (let key in Saturn) {
-		domElement.innerHTML += `<p>${key} &nbsp ${Saturn[key]}</p>`;
+		temp += `<p>${key} &nbsp:&nbsp ${Saturn[key]}</p>`;
   	}
-	domElement.innerHTML += '</div>';
+  	temp += '</div>';
+	domElement.innerHTML += temp;
 
 }
 
@@ -170,21 +175,22 @@ module.exports = outputTo;
 
 const Uranus = { 
 	"Name": "Uranus", 
-	"Year":  0,
-	"Mass": "5.972 × 10^24 kg", 
-	"Size": "6371.39 km",
-	"Distance": "149.6 x 10^6 km",
-	"Atmosphere": "78% N, 21% O, 0.9 Ar",
-	"Satellites": "Moon",
-	"Spacecrafts": "too many"
+	"Year":  1781,
+	"Mass": "86.8x10 × 10^24 kg", 
+	"Size": "51,488 km",
+	"Distance": "1.7 x 10^9 km",
+	"Atmosphere": "82.5% H, 15.2% He, 2.3 CH4",
+	"Satellites": "27 known moons, faint rings",
+	"Spacecrafts": "Voyger 2 (flyby)"
 };
 
 function outputTo(domElement) {
-	domElement.innerHTML += '<div id="Uranus" class="planet">';
+	let temp = '<div id="Uranus" class="planet">';
 	for (let key in Uranus) {
-		domElement.innerHTML += `<p>${key} &nbsp ${Uranus[key]}</p>`;
+		temp += `<p>${key} &nbsp:&nbsp ${Uranus[key]}</p>`;
   	}
-	domElement.innerHTML += '</div>';
+  	temp += '</div>';
+	domElement.innerHTML += temp;
 
 }
 
@@ -194,21 +200,22 @@ module.exports = outputTo;
 
 const Venus = { 
 	"Name": "Venus", 
-	"Year":  0,
-	"Mass": "5.972 × 10^24 kg", 
-	"Size": "6371.39 km",
-	"Distance": "149.6 x 10^6 km",
-	"Atmosphere": "78% N, 21% O, 0.9 Ar",
-	"Satellites": "Moon",
-	"Spacecrafts": "too many"
+	"Year":  1761,
+	"Mass": "4.87 × 10^24 kg", 
+	"Size": "12104 km",
+	"Distance": "109 x 10^6 km",
+	"Atmosphere": "Almost completely carbon dioxide. Nitrogen exists in small doses, as do clouds of sulfuric acid.",
+	"Satellites": "none",
+	"Spacecrafts": "38 spacecraft have at least partially successfully completed a mission at Venus."
 };
 
 function outputTo(domElement) {
-	domElement.innerHTML += '<div id="Venus" class="planet">';
+	let temp = '<div id="Venus" class="planet">';
 	for (let key in Venus) {
-		domElement.innerHTML += `<p>${key} &nbsp ${Venus[key]}</p>`;
+		temp += `<p>${key} &nbsp:&nbsp ${Venus[key]}</p>`;
   	}
-	domElement.innerHTML += '</div>';
+  	temp += '</div>';
+	domElement.innerHTML += temp;
 
 }
 

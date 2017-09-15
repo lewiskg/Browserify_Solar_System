@@ -2,21 +2,22 @@
 
 const Jupiter = { 
 	"Name": "Jupiter", 
-	"Year":  0,
-	"Mass": "5.972 × 10^24 kg", 
-	"Size": "6371.39 km",
-	"Distance": "149.6 x 10^6 km",
-	"Atmosphere": "78% N, 21% O, 0.9 Ar",
-	"Satellites": "Moon",
-	"Spacecrafts": "too many"
+	"Year":  1610,
+	"Mass": "1,898 × 10^24 kg", 
+	"Size": "142,800 km",
+	"Distance": "817 x 10^6 km",
+	"Atmosphere": "90% H, ~10% He, trace amounts of ammonia, sulfur, methane, and water vapor.",
+	"Satellites": "67 known",
+	"Spacecrafts": '<a href="https://en.wikipedia.org/wiki/Exploration_of_Jupiter">List of missions to Juipter</a>'
 };
 
 function outputTo(domElement) {
-	domElement.innerHTML += '<div id="Jupiter" class="planet">';
+	let temp = '<div id="Jupiter" class="planet">';
 	for (let key in Jupiter) {
-		domElement.innerHTML += `<p>${key} &nbsp ${Jupiter[key]}</p>`;
+		temp += `<p>${key} &nbsp:&nbsp ${Jupiter[key]}</p>`;
   	}
-	domElement.innerHTML += '</div>';
+  	temp += '</div>';
+	domElement.innerHTML += temp;
 
 }
 

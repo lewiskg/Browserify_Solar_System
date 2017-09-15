@@ -2,21 +2,22 @@
 
 const Saturn = { 
 	"Name": "Saturn", 
-	"Year":  0,
-	"Mass": "5.972 × 10^24 kg", 
-	"Size": "6371.39 km",
-	"Distance": "149.6 x 10^6 km",
-	"Atmosphere": "78% N, 21% O, 0.9 Ar",
-	"Satellites": "Moon",
-	"Spacecrafts": "too many"
+	"Year":  1610,
+	"Mass": "568.5 × 10^24 kg", 
+	"Size": "119,871 km",
+	"Distance": "888.2 x 10^6 km",
+	"Atmosphere": "96.3% H and 3.25% He",
+	"Satellites": "62 known moons and many ring",
+	"Spacecrafts": "Pioneer 11, Voyager 1, Voyager 2, and Cassini"
 };
 
 function outputTo(domElement) {
-	domElement.innerHTML += '<div id="Saturn" class="planet">';
+	let temp = '<div id="Saturn" class="planet">';
 	for (let key in Saturn) {
-		domElement.innerHTML += `<p>${key} &nbsp ${Saturn[key]}</p>`;
+		temp += `<p>${key} &nbsp:&nbsp ${Saturn[key]}</p>`;
   	}
-	domElement.innerHTML += '</div>';
+  	temp += '</div>';
+	domElement.innerHTML += temp;
 
 }
 
