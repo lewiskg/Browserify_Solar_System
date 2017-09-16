@@ -5,7 +5,9 @@ body {
 
 a {
 	color: yellow;
+	text-decoration: none;
 }
+
 
 #output-container {
 	display: flex;
