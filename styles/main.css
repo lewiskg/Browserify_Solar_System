@@ -1,10 +1,16 @@
 body {
-	background: azure;
+	background: lightgray;
+	text-align: center;
+}
+
+a {
+	color: yellow;
 }
 
 #output-container {
 	display: flex;
 	flex-wrap: wrap;
+	justify-content: center;
 }
 .planet {
 	border: solid 2px black;
@@ -12,6 +18,7 @@ body {
 	height: 400px;
 	margin: 0 5px 5px 0;
 	color: yellow;
+	font-weight: bold;
 }
 
 
