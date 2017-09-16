@@ -1,8 +1,6 @@
 (function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
 "use strict";
 
-console.log("in main.js");
-
 const planet_mercury = require('./planet_mercury');
 const planet_venus = require('./planet_venus');
 const planet_earth = require('./planet_earth');
@@ -12,22 +10,23 @@ const planet_saturn = require('./planet_saturn');
 const planet_uranus = require('./planet_uranus');
 const planet_neptune = require('./planet_neptune');
 
+const divOnDom = document.getElementById("output-container");
 
-planet_mercury(document.getElementById("output-containier"));
-planet_venus(document.getElementById("output-containier"));
-planet_earth(document.getElementById("output-containier"));
-planet_mars(document.getElementById("output-containier"));
-planet_jupiter(document.getElementById("output-containier"));
-planet_saturn(document.getElementById("output-containier"));
-planet_uranus(document.getElementById("output-containier"));
-planet_neptune(document.getElementById("output-containier"));
+planet_mercury(divOnDom);
+planet_venus(divOnDom);
+planet_earth(divOnDom);
+planet_mars(divOnDom);
+planet_jupiter(divOnDom);
+planet_saturn(divOnDom);
+planet_uranus(divOnDom);
+planet_neptune(divOnDom);
 
 },{"./planet_earth":2,"./planet_jupiter":3,"./planet_mars":4,"./planet_mercury":5,"./planet_neptune":6,"./planet_saturn":7,"./planet_uranus":8,"./planet_venus":9}],2:[function(require,module,exports){
 "use strict";
 
 const Earth = { 
 	"Name": "Earth", 
-	"Year":  0,
+	"Year":  "Long time ago",
 	"Mass": "5.972 × 10^24 kg", 
 	"Size": "6371.39 km",
 	"Distance": "149.6 x 10^6 km",

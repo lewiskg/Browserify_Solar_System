@@ -2,7 +2,7 @@
 
 const Earth = { 
 	"Name": "Earth", 
-	"Year":  0,
+	"Year":  "Long time ago",
 	"Mass": "5.972 × 10^24 kg", 
 	"Size": "6371.39 km",
 	"Distance": "149.6 x 10^6 km",
