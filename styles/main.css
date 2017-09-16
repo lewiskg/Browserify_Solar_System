@@ -25,7 +25,7 @@ a {
 #Mercury {
 	background-color: black;
 	background-image: url('https://www.nasa.gov/sites/default/files/mercury_1.jpg');
-    background-repeat: no-repeat;
+    	background-repeat: no-repeat;
 	background-size: contain;
 	background-position: center;
 }
@@ -33,42 +33,42 @@ a {
 #Venus {
 	background-color: black;
   	background-image: url('https://upload.wikimedia.org/wikipedia/commons/8/85/Venus_globe.jpg');
-    background-repeat: no-repeat;
+    	background-repeat: no-repeat;
 	background-size: contain; 
 	background-position: center;
 }
 #Earth {
 	background-color: black;
   	background-image: url('https://www.nasa.gov/centers/goddard/images/content/638831main_globe_east_2048.jpg');
-    background-repeat: no-repeat;
+    	background-repeat: no-repeat;
 	background-size: contain;
 	background-position: center;
 }
 #Mars {
 	background-color: black;
   	background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Mars_23_aug_2003_hubble.jpg/275px-Mars_23_aug_2003_hubble.jpg');
-    background-repeat: no-repeat;
+    	background-repeat: no-repeat;
 	background-size: contain; 
 	background-position: center;
 }
 #Jupiter {
 	background-color: black;
   	background-image: url('https://upload.wikimedia.org/wikipedia/commons/2/2b/Jupiter_and_its_shrunken_Great_Red_Spot.jpg');
-    background-repeat: no-repeat;
+    	background-repeat: no-repeat;
 	background-size: contain; 
 	background-position: center;
 }
 #Saturn {
 	background-color: black;
   	background-image: url('http://nssdc.gsfc.nasa.gov/image/planetary/saturn/saturn.jpg');
-    background-repeat: no-repeat;
+    	background-repeat: no-repeat;
 	background-size: contain;
 	background-position: center;
 }
 #Uranus {
 	background-color: black;
   	background-image: url('https://upload.wikimedia.org/wikipedia/commons/3/3d/Uranus2.jpg');
-    background-repeat: no-repeat;
+    	background-repeat: no-repeat;
 	background-size: contain;
 	background-position: center;
 }
